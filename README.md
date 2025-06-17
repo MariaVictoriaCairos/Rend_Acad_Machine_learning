@@ -47,7 +47,7 @@ El número de filas que tenemos es 1000, y el número de columnas es 10
 ├── README.md                          # Informe del proyecto
 └── requerimientos.docx                # Requerimientos del proyecto
 
-5 directories, 26 files
+5 directories, 27 files
 
 ```
 
@@ -110,7 +110,7 @@ En conjunto, los estudiantes muestran buenos resultados y altos niveles de asist
 
 A continuación se relaciona cada histograma con los estadísticos previos, para comprobar que la forma de la distribución concuerda con la media, la mediana y el modo obtenidos:
 
-![Histogramas variables numéricas](./images/HistNumerico.png)
+![Histogramas variables numéricas](./Images/HistNumerico.png)
 
 
 | Variable             | Forma del histograma                                   | Relación con media/mediana/moda                                                                                                                     |
@@ -138,20 +138,24 @@ En todos los casos la forma de los histogramas confirma:
 | **estilo\_aprendizaje**         |   950 |      4 | Visual |  363 |
 
 Frecuencias de valores únicos por categoría
+
 - Frecuencia de ```Nivel de Dificultad```
-    | Nivel de Dificultad | Recuento |
-    | ------------------- | -------: |
-    | Medio               |      504 |
-    | Fácil               |      313 |
-    | Difícil             |      183 |
+  
+| Nivel de Dificultad | Recuento |
+| ------------------- | -------: |
+| Medio               |      504 |
+| Fácil               |      313 |
+| Difícil             |      183 |
 
 - Frecuencia de ```Tiene Tutor```
+  
 | Tiene Tutor | Recuento |
 | ----------- | -------: |
 | No          |      597 |
 | Sí          |      403 |
 
 - Frecuencia de ```Horario de Estudio Preferido```
+  
 | Horario de Estudio Preferido | Recuento |
 | ---------------------------- | -------: |
 | Noche                        |      344 |
@@ -159,6 +163,7 @@ Frecuencias de valores únicos por categoría
 | Mañana                       |      219 |
 
 - Frecuencia de ```Estilo de Aprendizaje```
+  
 | Estilo de Aprendizaje | Recuento |
 | --------------------- | -------: |
 | Visual                |      363 |
@@ -168,7 +173,7 @@ Frecuencias de valores únicos por categoría
 
 **Interpretación de la estadística descriptiva categórica**
 
-![Gráficos de barra de variables categóricas](./images/HistCatego.png)
+![Gráficos de barra de variables categóricas](./Images/HistCatego.png)
 
 A continuación se presenta un breve análisis de las variables cualitativas del conjunto de datos, con el objetivo de entender las preferencias y características de los estudiantes en aspectos clave como la percepción de dificultad, el acompañamiento académico, sus hábitos de estudio y su estilo de aprendizaje. Estas métricas ofrecen una visión clara de la distribución de estas categorías, permitiendo identificar tendencias predominantes: 
 - Nivel de dificultad: La mayoría (≈50 %) percibe el estudio como de dificultad “Medio”, seguido por “Fácil” (31 %) y “Difícil” (18 %).
@@ -178,7 +183,7 @@ A continuación se presenta un breve análisis de las variables cualitativas del
 
 ## **Análisis de correlación numérica**
 
-![Matriz de correlación de datos numéricos](./images/Correlacion1.png)
+![Matriz de correlación de datos numéricos](./Images/Correlacion1.png)
 
 Aunque la variable aprobado presenta una correlación muy elevada con nota_final, se trata en realidad de una etiqueta derivada (por ejemplo, aprobado = 1 si nota_final ≥ umbral). Por tanto, su vínculo es puramente tautológico y no aporta información adicional útil para la predicción.
 
@@ -193,7 +198,7 @@ En segundo orden, se podría considerar también:
 **Relaciones Cruzadas**
 Variable objetivo numérica nota_final, generamos la dispersión:
 
-![graficas de dispersión ](./images/disper.png)
+![graficas de dispersión ](./Images/disper.png)
 
 ### 1. nota_anterior vs nota_final
 - **Tendencia positiva clara**: los puntos ascienden de izquierda a derecha, confirmando que mejores notas previas tienden a asociarse con mejores notas finales.  
@@ -222,7 +227,7 @@ Variable objetivo numérica nota_final, generamos la dispersión:
 
 ---
 
-## Conclusión rápida
+#### Resumen
 - **Fuertes predictores**: `nota_anterior` (más claro) y, en menor grado, `tasa_asistencia`.  
 - **Poco o nada predictivas**: `horas_sueno` y `edad`.  
 - **Variable derivada**: `aprobado` solo refleja el umbral aplicado a `nota_final`.  
@@ -231,12 +236,12 @@ Variable objetivo numérica nota_final, generamos la dispersión:
 ## **Análisis de correlación categórica**
 
 ### Interpretación de las Boxplots
-![Boxplot categóricas ](./images/boxplot2.png.png)
-A continuación un resumen de lo que muestran tus gráficos para cada variable categórica:
+![Boxplot categóricas ](./Images/boxplot2.png)
+A continuación un resumen de lo que muestran los gráficos para cada variable categórica:
 
 ---
 
-## 1. Nivel de dificultad
+### 1. Nivel de dificultad
 
 **Media de la nota:**
 - **Fácil** tiene la media más alta (~72 pts),  
@@ -251,7 +256,7 @@ A continuación un resumen de lo que muestran tus gráficos para cada variable c
 
 ---
 
-## 2. Tener tutor
+### 2. Tener tutor
 
 **Media de la nota:**
 - Alumnos con tutor sacan de media ~75 pts,  
@@ -265,7 +270,7 @@ A continuación un resumen de lo que muestran tus gráficos para cada variable c
 
 ---
 
-## 3. Horario de estudio preferido
+### 3. Horario de estudio preferido
 
 **Media de la nota:**
 - **Tarde** (~72 pts) y **Mañana** (~71 pts) están muy parejos,  
@@ -279,7 +284,7 @@ A continuación un resumen de lo que muestran tus gráficos para cada variable c
 
 ---
 
-## 4. Estilo de aprendizaje
+### 4. Estilo de aprendizaje
 
 **Media de la nota:**
 - **Lectura/Escritura** y **Kinestésico** rondan ~72 pts,  
@@ -294,17 +299,17 @@ A continuación un resumen de lo que muestran tus gráficos para cada variable c
 
 ---
 
-## Resumen general
+#### Resumen
 
 - **Tutor** y **nivel de dificultad** son los factores categóricos con mayor impacto: tutor sube la media ~6 pts y dificultad alta la baja ~3 pts.  
 - **Horario** y **estilo** tienen efectos menores (<2 pts de diferencia) y distribuciones parecidas entre niveles.
 
-> Estos hallazgos pueden guiarte para focalizar intervenciones (por ejemplo, ofrecer tutorías o ajustar la dificultad del material) antes que en cambiar el horario o estilo de estudio.
+> Estos hallazgos pueden guiar para focalizar intervenciones (por ejemplo, ofrecer tutorías o ajustar la dificultad del material) antes que en cambiar el horario o estilo de estudio.
 
 
 ## Inconsistencias 
 
-Aquí tienes un conjunto de reglas de validación para detectar posibles inconsistencias en el DataFrame:
+A continuación se presentan las reglas de validación para detectar posibles inconsistencias en el DataFrame:
 
 - **Rangos de las notas**
   - `0 ≤ nota_anterior ≤ 100`
@@ -328,6 +333,9 @@ Para construir un modelo que realmente aprenda de factores exógenos y generalic
 - Es una etiqueta derivada de la propia `nota_final` (`aprobado = 1` si `nota ≥ 60`) y, por tanto, introduce fuga de información.  
 - Inflaría artificialmente las métricas de tu modelo (como precisión o R²), pues le estarías dando la respuesta “casi lista” en lugar de las variables verdaderamente predictivas.  
 
+> **IMPORTANTE:** En contradiccion al control de calidad, se mantiene la columna aprobado para demostrar el entrenamiento usando el método de regresión logística. Antes del proceso de entrenamiento de regresión lineal se elimina la columna aprobado. Y antes del proceso de entrenamiento con regresión logística se elimina la columna nota final.
+>
+> 
 # Preprocesamiento
 ## Gestión de nulos
 
@@ -340,6 +348,7 @@ Para construir un modelo que realmente aprenda de factores exógenos y generalic
 > Esta estrategia de imputación mantiene la integridad del dataset y aplica un tratamiento adaptado al tipo de variable, sin necesidad de eliminar filas con información parcial.  
 
 **Nulos en variables numéricas**
+
 |                          |   # 0 |
 |--------------------------|-------|
 | horas_sueno              |   150 |
@@ -347,6 +356,7 @@ Para construir un modelo que realmente aprenda de factores exógenos y generalic
 | estilo_aprendizaje       |    50 |
 
 **Nulos en variables categóricas**
+
 |                          |   # 0 |
 |--------------------------|-------|
 | horario_estudio_preferido|   100 |
@@ -354,30 +364,16 @@ Para construir un modelo que realmente aprenda de factores exógenos y generalic
 
 ## Gestión outliers
 **Columnas Numéricas**
-![Outliers numéricos ](./images/OutliersNum.png)
+![Outliers numéricos ](./Images/OutliersNum.png)
 Sólo en **tasa_asistencia** y **nota_final** hay casos aislados fuera de rango. Sin embargo, están dentro del 1 y el 100 cumpliendo con las reglas de consistencia de los datos. 
 
 Aunque estos valores están dentro del rango válido (1–100) y no violan ninguna regla de consistencia, se considera lo siguiente:
 
 1. **Relevancia y validez del dato**  
-   - Si esos extremos (por ejemplo, asistencia <30 % o nota >95) reflejan situaciones reales—alumnos con asistencia prácticamente nula o rendimiento excepcional—entonces son informativos y **no deberían eliminarse**.  
+   - Si esos extremos (por ejemplo, asistencia <30 % o nota >95) reflejan situaciones reales—alumnos con asistencia prácticamente nula o rendimiento excepcional—entonces son informativos y **no se eliminan**.  
    
-
 2. **Impacto en el modelado**  
-   - Los outliers pueden distorsionar modelos basados en medias o varianzas (p. ej. regresión lineal clásica).  
-   - Si vas a usar algoritmos sensibles a extremos, considera **transformaciones** (log, raíz cuadrada) o **escalado robusto** (RobustScaler, winsorización).
-
-3. **Opciones de tratamiento**  
-   - **Winsorización**: limitar al percentil 1–99 para atenuar el efecto de extremos.  
-   - **Imputación condicional**: reemplazar outliers por el valor del percentil 5/95, manteniendo la tendencia sin quitar la información.  
-   - **Modelos robustos**: usar regresión con pérdida Huber o árboles, que manejan bien valores atípicos sin necesidad de filtros.
-
----
-
-> **Recomendación general:**  
-> - **No eliminar** estos casos de raíz si pueden ser reales.  
-> - **Documentar** su existencia y, si es necesario, aplicar **técnicas de mitigación** (winsorizar, robust scaler) antes de entrenar modelos sensibles.  
-> - En todos los casos, conservar la copia original del dato para posible análisis posterior.  
+   - Los outliers pueden distorsionar modelos basados en medias o varianzas (p. ej. regresión lineal clásica).  En este caso se mantiene el modelo de regresion lineal ya que es el objetivo del estudio.
 
 ## Preparar los datos para la regresión.
 
@@ -393,7 +389,7 @@ Ahora preparamos el DataFrame para la regresión, asumiendo que la variable obje
 3. **Guardado del DataFrame preprocesado**  
    - Finalmente, volcamos el resultado a disco (por ejemplo, con `df.to_csv("df_reg_preprocessed.csv", index=False)`) para su uso en el modelo.
 
-Con este proceso obtenemos un conjunto de datos listo para entrenar nuestro modelo de regresión sin pérdida de información ni sesgos de escala.  
+Con este proceso obtenemos un conjunto de datos listo para entrenar nuestro modelo de regresión sin pérdida de información, ni sesgos de escala.  
 
 
 # Proceso de entrenamiento del modelo de regresión
@@ -419,6 +415,7 @@ Con este proceso obtenemos un conjunto de datos listo para entrenar nuestro mode
 
 6. **Cálculo e interpretación de métricas**  
    Calculamos R², MAE y RMSE tanto en entrenamiento como en prueba, para evaluar la calidad del ajuste y detectar posible sobreajuste.
+   
     |  Conjunto | R<sup>2</sup> |  MAE | RMSE |
     | :-------: | :-----------: | :--: | :--: |
     | **Train** |      0.32     | 6.41 | 7.97 |
@@ -445,6 +442,7 @@ La raíz del error cuadrático medio, que penaliza más los errores grandes, es 
 8. **Optimización**  
    Exploramos técnicas de regularización (Ridge, Lasso), ajuste de hiperparámetros (GridSearchCV/RandomizedSearchCV) y posibles transformaciones o ingeniería de características para mejorar la generalización.  
 Los resultados de las métricas son :
+
 | Modelo               | Train R² | Train MAE | Train RMSE | Test R² | Test MAE | Test RMSE |
 |:--------------------:|:--------:|:---------:|:----------:|:-------:|:--------:|:---------:|
 | **Linear (L0)**         |   0.32   |   6.41    |    7.97    |  0.33   |   6.04   |   7.41    |
@@ -477,19 +475,19 @@ Los resultados de las métricas son :
 En resumen, los modelos regularizados (especialmente **Lasso**) aportan una pequeña ventaja en generalización y podrían simplificar la interpretación, pero el poder predictivo global sigue siendo limitado (R²≈0.34).
 
 
-# Ciclos de entrenamiento realizados para optimizar el modelo de regresión lineal
+## Iteracciones realizadas para optimizar el modelo de regresión lineal
 
 1. **Entrenamiento inicial (sin tratamiento de outliers)**  
    En la primera iteración se ajustó el modelo lineal directamente, dado que los valores parecían estar dentro de rangos razonables. Aunque la correlación entre predicciones y valores reales fue buena (tendencia cercana a y = x), el modelo aún presentaba un margen de error moderado y mostraba un ligero sesgo en los extremos.  
 
    Para abordar esto, aplicamos el método Z-score para detectar outliers y los reemplazamos por la mediana de cada variable. El resultado fue una mejora clara en la distribución de errores y en la capacidad de predicción:  
-   ![Comparativa valor real vs. predicción](./images/modelo1ValRealPredicciones.png)  
-   ![Distribución posterior a la imputación](./images/modelo1Distribucion.png)  
-   ![Análisis de residuos tras el tratamiento](./images/modelo1residuo.png)  
+   ![Comparativa valor real vs. predicción](./Images/modelo1ValRealPredicciones.png)  
+   ![Distribución posterior a la imputación](./Images/modelo1Distribucion.png)  
+   ![Análisis de residuos tras el tratamiento](./Images/modelo1residuo.png)  
 
 2. **Eliminación de la variable “aprobado”**  
    El gráfico de importancia de características mostró que `aprobado` era, con gran diferencia, la variable con mayor peso en el modelo. Dado que no aporta información adicional relevante y puede introducir sesgo, decidimos excluirla del dataset antes de volver a entrenar.  
-   ![Importancia de características](./images/modelo1caracteristicas.png)  
+   ![Importancia de características](./Images/modelo1caracteristicas.png)  
 
 3. **Prueba con regularización Lasso**  
    Finalmente, exploramos el uso de Lasso para reducir el número de variables y mejorar la generalización. Sin embargo, la métrica predictiva no mejoró de forma significativa, por lo que hemos optado por mantener el modelo lineal ajustado con los pasos anteriores.
@@ -527,8 +525,7 @@ A continuación se presenta el procedimeinto para el entrenamiento de un modelo 
 
 ## 4. Validación con matriz de confusión
 
-- Obtener predicciones sobre el conjunto de prueba.
-- Construir la **matriz de confusión** para visualizar:
+Se construye la **matriz de confusión** para visualizar:
   - Verdaderos positivos (VP)
   - Falsos positivos (FP)
   - Verdaderos negativos (VN)
@@ -536,7 +533,7 @@ A continuación se presenta el procedimeinto para el entrenamiento de un modelo 
 
 La matriz de confusión resultante es:
 
-   ![Importancia de características](./images/matrizconfusion.png)  
+   ![Importancia de características](./Images/matrizconfusion.png)  
 
 - **Verdaderos negativos (TN = 0):** de las 15 muestras realmente negativas, ninguna fue correctamente clasificada como 0.  
 - **Falsos positivos (FP = 15):** las 15 muestras negativas fueron todas clasificadas incorrectamente como positivas.  
@@ -574,7 +571,7 @@ La matriz de confusión resultante es:
 
 ---
 
-### Conclusión y advertencia
+### Conclusión
 
 El modelo tiene recall perfecto para la clase “aprobado = 1”, pero a costa de predecir muy pocos (o ningún) ejemplos como “no aprobado” (ver matriz de confusión).  
 En escenarios desbalanceados es crucial complementar con métricas de la clase negativa (recall_negativo, specificity, balanced accuracy) o ajustar el umbral de decisión para recuperar sensibilidad sobre la clase minoritaria.  
@@ -621,6 +618,7 @@ En resumen, el balanceo ha corregido la “trampa” de predecir siempre la clas
 
 ## 7. Importancia de las características
 
+Se valora la importancia de las características, tomando en cuenta:
 - Extraer coeficientes del modelo y tomar su valor absoluto.
 - Ordenar variables según magnitud del coeficiente.
 - Visualizar un diagrama de barras con la importancia de cada variable.
@@ -653,13 +651,13 @@ En resumen, el balanceo ha corregido la “trampa” de predecir siempre la clas
 
 Con este pipeline completamos el entrenamiento, la evaluación y la interpretación de un modelo de regresión logística para la predicción de la variable `aprobado`.  
 
-# Ciclos de entrenamiento realizados para optimizar el modelo de regresión Logística
+## Iteracciones realizadas para optimizar el modelo de regresión Logística
 1. En el primer ciclo de entrenamiento, el coeficiente de nota_final es abrumadoramente mayor que el de cualquier otra variable, lo que indica que el modelo se apoya casi exclusivamente en esa información para predecir la etiqueta aprobado. Sin embargo, nota_final no es una característica independiente: el objetivo aprobado se define precisamente como “nota_final ≥ 60”. Esto introduce un claro data leakage (fuga de información), ya que el modelo estaría aprendiendo directamente de la variable que determina la clasificación.
 
 Por este motivo, confirmamos que es necesario eliminar la columna nota_final del DataFrame antes de volver a entrenar. De este modo, forzamos al modelo a basar sus predicciones en las demás características (asistencia, estilo de aprendizaje, horas de sueño, etc.), evaluando realmente su capacidad para generalizar y detectar patrones significativos sin recurrir a la variable calculada a posteriori.
 
 Con esta limpieza de variables, reducimos la redundancia, evitamos el sobreajuste y obtenemos métricas (precision, recall, F1, etc.) que reflejan el rendimiento real del modelo sobre datos que no contienen fuga de la etiqueta.
-![Caracteristicas regresión logística](./images/caracteristicasregresionlogist.png).
+![Caracteristicas regresión logística](./Images/caracteristicasregresionlogist.png).
 
 # Resultados tras eliminar la columna `nota_anterior`
 
